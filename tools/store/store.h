@@ -11,7 +11,7 @@
 #include "tools/types.h"
 
 #define	STORE__DEFAULTID	0xABBA											
-#define STORE__INDEX		0												// The first byte allocated in the EEPROM
+#define STORE__INDEX		350												// The first byte allocated in the EEPROM
 
 #define STORE__ID_s			0												// Identifier (2 bytes)
 #define	STORE__ADDR_s		2												// Address M1 to M5 (2 bytes per address)

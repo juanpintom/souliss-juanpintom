@@ -139,11 +139,11 @@ void Souliss_SetIPAddress(U8* ip_address, U8* subnet_mask, U8* ip_gateway)
 
 	#if(MCU_TYPE == 0x02)	// Expressif ESP8266
 	// Setup the SSID and Password
-	WiFi.begin(WiFi_SSID, WiFi_Password);
+	//WiFi.begin(WiFi_SSID, WiFi_Password);
 	
 	// Connect
-	while (WiFi.status() != WL_CONNECTED) 	
-		delay(500);
+	//while (WiFi.status() != WL_CONNECTED) 	
+	//	delay(500);
 	
 	// Set manually an IP address
 	WiFi.config(ip_address, ip_gateway, subnet_mask);
@@ -171,11 +171,11 @@ void Souliss_GetIPAddress()
 	
 #elif(MCU_TYPE == 0x02)	// Expressif ESP8266
 	// Setup the SSID and Password
-	WiFi.begin(WiFi_SSID, WiFi_Password);
+	//WiFi.begin(WiFi_SSID, WiFi_Password);
 	
 	// Connect
-	while (WiFi.status() != WL_CONNECTED) 	
-		delay(500);
+	//while (WiFi.status() != WL_CONNECTED) 	
+	//	delay(500);
 	
 	// Get the IP network parameters
 	IPAddress lIP  = WiFi.localIP();
