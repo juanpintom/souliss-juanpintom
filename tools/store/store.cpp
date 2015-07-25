@@ -35,6 +35,8 @@ void Store_Init()
 	#if(MCU_TYPE == 0x01)	// Atmel AVR Atmega
 	#elif(MCU_TYPE == 0x02)	// Expressif ESP8266
 		EEPROM.begin(STORE__SIZE);
+		Serial.print("EEPROM Started with size: ");
+		Serial.println(STORE__SIZE);
 	#endif	
 }	
 

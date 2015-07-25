@@ -146,7 +146,7 @@ void Souliss_SetIPAddress(U8* ip_address, U8* subnet_mask, U8* ip_gateway)
 	//	delay(500);
 	
 	// Set manually an IP address
-	WiFi.config(ip_address, ip_gateway, subnet_mask);
+	//WiFi.config(ip_address, ip_gateway, subnet_mask);
 	#endif
 	
 	// Set the address
