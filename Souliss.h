@@ -32,6 +32,8 @@
 	in the whole code, including sub-libraries.
 */
 
+#define LOG Serial
+
 #include <Arduino.h>
 #include "tools/types.h"
 #include "tools/util.h"
